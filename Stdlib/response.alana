@@ -1,0 +1,29 @@
+define class Response;
+private:
+    define num status is new;
+    define str body is new;
+    define num nativeHandle is new;
+
+public:
+    define constructor(num nativeHandle, num status, str body);
+        redefine self.nativeHandle is nativeHandle;
+        redefine self.status is status;
+        redefine self.body is body;
+    end;
+
+    define func GetStatus() returning num;
+        return self.status;
+    end;
+
+    define func GetBody() returning str;
+        return self.body;
+    end;
+
+    define func GetHeader(str name) returning str;
+        return call __http_header(self.nativeHandle, name);
+    end;
+
+    define func Close();
+        call __http_dispose(self.nativeHandle);
+    end;
+end;

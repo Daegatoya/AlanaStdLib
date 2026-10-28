@@ -1,0 +1,21 @@
+import "response.alana";
+
+define class Http;
+public:
+    define constructor();
+    end;
+
+    define func Get(str url) returning Response;
+        define num handle is call __http_request("GET", url);
+        define num status is call __http_status(handle);
+        define str body is call __http_body(handle);
+        return newobj Response(handle, status, body);
+    end;
+
+    define func Post(str url, str body, str contentType) returning Response;
+        define num handle is call __http_request("POST", url, body, contentType);
+        define num status is call __http_status(handle);
+        define str responseBody is call __http_body(handle);
+        return newobj Response(handle, status, responseBody);
+    end;
+end;

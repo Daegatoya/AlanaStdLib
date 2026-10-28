@@ -1,0 +1,9 @@
+define class Json;
+public:
+    define constructor();
+    end;
+
+    define func Serialize(any value) returning str;
+        return call __json_serialize(value);
+    end;
+end;
