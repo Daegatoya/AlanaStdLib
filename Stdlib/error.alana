@@ -1,0 +1,12 @@
+define class Error;
+    define str message is new;
+    define num line is new;
+    define num col is new;
+    define str source is new;
+    define constructor(str message);
+        redefine self.message is message;
+        redefine self.line is call __error_line();
+        redefine self.col is call __error_col();
+        redefine self.source is call __error_source();
+    end;
+end;
