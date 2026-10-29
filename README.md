@@ -8,7 +8,7 @@
 
 **Welcome to AlanaStdLib**, the official standard library made for the [Alana programming language](https://csalana.com).
 
-The library is currently not available for download but will be fully accessible soon on the Alana installer for Windows and Linux.
+Currently, the standard library is only available through the official Alana language's download.
 
 ## What is currently included in the stdlib
 - [x] HTTP POST/GET
