@@ -13,12 +13,13 @@ The library is currently not available for download but will be fully accessible
 ## What is currently included in the stdlib
 - [x] HTTP POST/GET
 - [x] JSON Serialize
+- [x] Error Handler 
 
 **A code using Alana's standard library could look like this:**
 
 ```txt
-import "json.alana";
-import "http.alana";
+including "stdlib/http.alana";
+including "stdlib/json.alana";
 
 define Http http is newobj Http();
 define Json json is newobj Json();
