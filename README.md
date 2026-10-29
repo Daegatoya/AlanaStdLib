@@ -1,4 +1,4 @@
-# AlanaStdLib v0.1
+# AlanaStdLib v0.2
 <img src="alana.png" alt="Alana Logo" width="500">
 
 > Check out the official [Alana website](https://csalana.com)
