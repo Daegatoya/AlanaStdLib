@@ -20,6 +20,7 @@ Currently, the standard library is only available through the official Alana lan
 ```txt
 including "stdlib/http.alana";
 including "stdlib/json.alana";
+including "stdlib/error.alana";
 
 define Http http is newobj Http();
 define Json json is newobj Json();
@@ -47,19 +48,24 @@ define str body is "{
 define str parsedBody is call Serialize(body);
 
 while true;
-    showln "---- Sending POST Request----";
-    showln;
-    showln "Press Enter to send a POST request to https://postman-echo.com/post";
-    readln;
-
-    showln call SendRequest("POST", "https://postman-echo.com/post", parsedBody);
-
-    showln "---- Sending GET Request----";
-    showln;
-    showln "Press Enter to send a GET request to https://postman-echo.com/get";
-    readln;
-
-    showln call SendRequest("GET", "https://postman-echo.com/get?phrase=HelloWorld", parsedBody);
+    try;
+        showln "---- Sending POST Request----";
+        showln;
+        showln "Press Enter to send a POST request to https://postman-echo.com/post";
+        readln;
+    
+        showln call SendRequest("POST", "https://postman-echo.com/post", parsedBody);
+    
+        showln "---- Sending GET Request----";
+        showln;
+        showln "Press Enter to send a GET request to https://postman-echo.com/get";
+        readln;
+    
+        showln call SendRequest("GET", "https://postman-echo.com/get?phrase=HelloWorld", parsedBody);
+    end;
+    catch(error);
+        throw newobj Error(error);
+    end;
 end;
 ```
 
