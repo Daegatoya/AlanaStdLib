@@ -79,4 +79,4 @@ Stay aware for future updates!
 
 *And don't forget to ⭐ the repo!*
 
-> Copyright © Daegatoya - 2026 | AlanaStdLib v0.1 | Branch of Alana v1.4
+> Copyright © Daegatoya - 2026 | AlanaStdLib v0.1 | Branch of Alana v2.0
