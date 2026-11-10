@@ -135,4 +135,4 @@ Some keywords might change with time, this is truly just the beginning of it.
 
 Stay tuned for future updates!
 
-> Copyright © Daegatoya - 2026 | AlanaStdLib v0.1 | Branch of Alana v2.0
+> Copyright © Daegatoya — 2026 | AlanaStdLib v0.1 | Branch of Alana v2.0
