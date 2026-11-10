@@ -133,8 +133,6 @@ This library will obviously keep growing alongside Alana and becoming bigger as 
 
 Some keywords might change with time, this is truly just the beginning of it.
 
-Stay aware for future updates!
-
-*And don't forget to ⭐ the repo!*
+Stay tuned for future updates!
 
 > Copyright © Daegatoya - 2026 | AlanaStdLib v0.1 | Branch of Alana v2.0
